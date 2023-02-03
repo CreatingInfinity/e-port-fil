@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+}
+
+body{
+    background-image:url(images/copy-space-wavy-white-background-layers_23-2148845469.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    width:100%;
+    position: relative;
+}
+.head{
+    height: 55px;
+    width: 100%;
+    background-color:#141414;
+    position: relative;
+    z-index: 100;
+}
+.head .title-x1{
+    height: 100%;
+    width: 100%;
+    background-color: #1a1a1a;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+.title-x1:hover{
+    background-color:#2e2e2e ;
+    cursor: pointer;
+}
+.title-x1 img{
+    height: 70%;
+}
+.title-x2 ul{
+    list-style: none;
+    display: flex;
+    color:white;
+    height: 100%;
+    width: 600px;
+    margin: auto;
+    z-index: 99;
+    text-align: center;
+    justify-content: space-around;
+}
+.title-x2{
+    position: sticky;
+    top: 0;
+    background-color: #131313;
+    z-index: 98;
+}
+.title-x2 ul li{
+    height: 100%;
+    width: 100%;
+    transition: .3s;
+}
+.title-x2 ul li:hover{
+    cursor: pointer;
+    background-color: #23204d;
+}
+.title-x2 ul li p{
+    padding: 20px;
+}
+
+div h1 img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+    opacity: .6;
+}
+div h1 div{
+    height: 200px;
+    background: rgb(0, 0, 0);
+}
+h1 div h2{
+    color: white;
+    position: absolute;
+    height:150px;
+    width: 100%;
+    padding: 30px 0 0 0;
+    top:0;
+    display: flex;
+    line-height: 2;
+    text-align:left;
+    flex-direction: column;
+}
+h1 div h2:hover > b{
+    padding-left: 40px;
+    color:gold;
+}
+h1 div h2:hover> .mask-bc{
+    width: 800px;
+}
+h1 div h2 p,b{
+    font-family: 'Open Sans';
+    z-index: 10;
+    transition: .4s;
+}
+label{
+    display: none;
+}
+.mask-bc{
+    position: absolute;
+    z-index: 6;
+    top: 0;
+    left: 0;
+    height:200px;
+    width: 500px;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    transition: .4s;
+}
+.info-t{
+    padding: 50px 0;
+    display: flex;
+}
+.dtt p{
+    font-size: 20px;
+}
+.dtt div:hover{
+    color: rgb(177, 177, 177);
+}
+@media(max-width:700px){
+    body{
+        width:700px;
+    }
+    .dtt div{
+        font-size: 5px;
+    }
+    .r{
+        position: static;
+        bottom: 0;
+        height: 40px;
+        padding-bottom: 100%;
+        width: 100%;
+        background-color: rgb(10, 10, 10);
+        color: rgb(180, 180, 180);
+        line-height: 2;
+        font-style: italic;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+    }
+}

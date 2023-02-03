@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <style>
+            body{
+                    background-image:url(images/copy-space-wavy-white-background-layers_23-2148845469.webp);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+                main p{
+                    font-size: 20px;
+                }
+
+            @media(max-width:700px){
+                .r{
+                    position: static;
+                    bottom: 0;
+                    height: 40px;
+                    padding-bottom: 100%;
+                    width: 100%;
+                    background-color: rgb(10, 10, 10);
+                    color: rgb(180, 180, 180);
+                    line-height: 2;
+                    font-style: italic;
+                    display: flex;
+                    justify-content: space-around;
+                    padding-top: 20px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <section class="head">
+                    <div onclick="divclick()" class="title-x1">
+                        <div  class="title-x1">
+                        <img src="images/LogoMakr-3qgaIj.png">
+                    </div>
+                </section>
+                <section class="body"></section>
+            </div>
+            <div class="title-x2">
+                <ul>
+                    <li class="about" onclick="divclick()" style="border-left: solid 2px rgb(70, 90, 146);"><p>About Me</p></li>
+                    <li class="edu" onclick="civclick()" style="border-left: solid 2px rgb(67, 65, 163);"><p>Education</p></li>
+                    <li class="Cont" onclick="botclick()" style="border-left: solid 2px rgb(63, 69, 146);border-right: solid 2px rgb(76, 75, 160);"><p>Contact Me</p></li>
+                </ul>
+            </div>
+        </nav>
+        <main style="height:392px;width: 100%;justify-content: center;text-align: center;padding-bottom: 1000px;padding: 40px 0;line-height: 2; ">
+            <h1 style="font-size: 50px;">Education</h1>
+            <ul style="list-style:circle ;">
+                <li><p>Nagtapos ng Elementarya at Junior High School.</p></li>
+                <li><p>Isang Grade 12 na pagraduate na sa batch ng STEM 12 Corpus Chirsti Parochial School S.Y 2022 - 2023.</p></li>
+            </ul>
+        </main>
+        <script src="system.js"></script>
+        <div id="r" class="r" style="background-color: rgb(10, 10, 10);color: rgb(180, 180, 180);line-height: 2; font-style: italic;display: flex;justify-content: space-around;padding-top: 20px;">
+            <p>Gmail: axelleltanal@gmail.com</p>
+            <p>Phone Number: +639817097014</p>
+        </div>
+    </body>
+</html>
