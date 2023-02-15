@@ -7,6 +7,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
         <style>
             body{
                     background-image:url(images/copy-space-wavy-white-background-layers_23-2148845469.webp);
@@ -15,13 +18,21 @@
                     background-repeat: no-repeat;
                 }
                 main{
-                        height: 80vh;
                         position: relative;
                         display: flex;
                         flex-direction: column;
                         justify-content: flex-start;
                     }
                 
+                main ul li:hover{
+                    letter-spacing: 4px;
+                    font-size: 32px;
+                }
+                main ul li{
+                    text-align: center;
+                    transition: .3s;
+                }
+
                 .folder-ddt{
                                 background-color:rgb(63, 34, 167);
                                 height: 60px;
@@ -31,7 +42,7 @@
                                 color:white;
                             }
                 .bx-dd{
-                    background-color: rgba(81, 52, 212, 0.568);
+                    background-color: rgba(63, 39, 170, 0.568);
                     transition: .3s;
                 }
                 .bx-dd:hover{
@@ -53,6 +64,8 @@
                     justify-content: space-around;
                     padding-top: 20px;
                 }
+
+                
             }
         </style>
     </head>
@@ -76,49 +89,43 @@
             </div>
         </nav>
         <main>
-            <div class="folder-ddt">
-                FILES: FILIPINO NA GAWAIN
-            </div>
-            <section style="padding-top:10px;width: 100%; display: flex;flex-direction: column;align-items: center;" >
-                <div style="width: 80%;">
-                    <div style=" border-top-right-radius: 10px;border-top-left-radius: 10px;align-items: center;padding: 0 80px;justify-content: space-between;height:30px;background-color: rgba(14, 14, 14, 0.938); display: flex;color: white;">
-                        <p>Pangalan ng Gawain</p>
-                        <p>Petsa</p>
-                    </div>
-                    <div style="height: 370px;width:100%;display: flex;overflow-y: scroll;">
-                        <div style="background-color: rgba(184, 184, 184, 0.288);width:100%; height: 600px;">
-                            <div class="bx-dd" onclick="f1()"  style="margin: 10px 0;border-radius: 10px;display: flex;justify-content:space-between; height: 100px;align-items: center;line-height: 2;">
-                                <div>
-                                    <div style="padding:0 20px;">
-                                        <p>
-                                            <span style="display: block; font-weight: bold;font-size: 20px;"> Tekstong Impormatibo</span>
-                                            Gawain 1: Magsagawa ng isang tekstong impormatibo, at i-publish sa website na iyong ginawa.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div style="height: 100%;width: 200px;display: flex;justify-content: center;align-items: center;">
-                                    Pebrero 10, 2023
-                                </div>
-                            </div>
-                        <div style="background-color: rgba(184, 184, 184, 0.288);width:100%; height: 600px;">
-                            <div class="bx-dd" onclick="f2()"  style="margin: 10px 0;border-radius: 10px;display: flex;justify-content:space-between; height: 100px;align-items: center;line-height: 2;">
-                                <div>
-                                    <div style="padding:0 20px;">
-                                        <p>
-                                            <span style="display: block; font-weight: bold;font-size: 20px;"> Malikhaing Sulatin</span>
-                                            Gumawa ng akrostik na nag sisimula sa letra na nasa salitang 'AKADEMIKO'.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div style="height: 100%;width: 200px;display: flex;justify-content: center;align-items: center;">
-                                    Pebrero 14, 2023
-                                </div>
-                            </div>
-                        
-                        </div>
-                    </div>
+            <div>
+                <div style="text-decoration-line: line-through;display: flex;justify-content: center;">
+                    <p style="font-family:Josefin Sans;font-weight:900;color:rgb(0, 0, 0);font-size:55px;letter-spacing: 9px;margin:20px 0">Akrostik</p>
                 </div>
-            </section>
+                <div style="display: flex;justify-content: center;text-align: left;line-height: 2;">
+                    <ul style="font-size: 30px;list-style: none;">
+                        <li>
+                            <span style="font-size: 50px;font-family:Josefin sans;font-weight: bold;">A</span>ngkin man maraming impormasyon. 
+                        </li>
+                        <li>
+                            <span style="font-size: 50px;font-family:Josefin sans;font-weight: bold;">K</span>ailangan parin ang obserbasyon.
+                        </li>
+                        <li>
+                            <span style="font-size: 50px;font-family:Josefin sans;font-weight: bold;">A</span>lamin gamit ang pananaliksik.
+                        </li>
+                        <li>
+                            <span style="font-size: 50px;font-family:Josefin sans;font-weight: bold;">D</span>uon sa website na awtentik. 
+                        </li>
+                        <li>
+                            <span style="font-size: 50px;font-family:Josefin sans;font-weight: bold;">E</span>struktura ng pahayag ay isunud-sunod,
+                        </li>
+                        <li>
+                            <span style="font-size: 50px;font-family:Josefin sans;font-weight: bold;">M</span>apaliwanag lang ang iyong buod.
+                        </li>
+                        <li>
+                            <span style="font-size: 50px;font-family:Josefin sans;font-weight: bold;">I</span>padama sa publiko,
+                        </li>
+                        <li>
+                            <span style="font-size: 50px;font-family:Josefin sans;font-weight: bold;">K</span>atotohanan ang sulat mo,
+                        </li>
+                        <li>
+                            <span style="font-size: 50px;font-family:Josefin sans;font-weight: bold;">O</span>bhetibo'y nararapat na pagsulat nito. 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
         </main>
         <script src="system.js"></script>
         <div id="r" class="r" style="background-color: rgb(10, 10, 10);color: rgb(180, 180, 180);line-height: 2; font-style: italic;display: flex;justify-content: space-around;padding-top: 20px;">

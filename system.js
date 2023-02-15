@@ -14,3 +14,6 @@ function botclick()
 function f1(){
     window.location.href = 'f1.html';
 }
+function f2(){
+    window.location.href = 'f2.html';
+}
