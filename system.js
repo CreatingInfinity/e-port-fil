@@ -17,3 +17,6 @@ function f1(){
 function f2(){
     window.location.href = 'f2.html';
 }
+function f3(){
+    window.location.href = 'f3.html';
+}
