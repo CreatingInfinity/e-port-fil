@@ -20,3 +20,6 @@ function f2(){
 function f3(){
     window.location.href = 'f3.html';
 }
+function f4(){
+    window.location.href = 'f4.html';
+}

@@ -7,6 +7,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
         <style>
             body{
                     background-image:url(images/copy-space-wavy-white-background-layers_23-2148845469.webp);
@@ -37,6 +40,35 @@
                 .bx-dd:hover{
                     cursor: pointer;
                     background-color: rgba(61, 41, 177, 0.781);
+                }
+                .img-1{
+                   width: 400px;
+                    height: 300px;
+                    border-radius: 20px;
+                    box-shadow: 5px 5px 10px black;
+                }
+                .img-1:hover{
+                    opacity: .9;
+                }
+                .hide-me{
+                    position: absolute;
+                    width: 450px;
+                    height: 600px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    border-radius: 20px;
+                    flex-direction: column;
+                    display: flex;
+                    opacity: 0;
+                    transition: .4s;
+                }
+                .cont-dtt:hover .hide-me{
+                    opacity: 1;
+                }
+                .img2{
+                    width: 40%;
+                    padding-top:20px ;
                 }
             @media(max-width:700px){
                 .r{
@@ -75,24 +107,68 @@
                 </ul>
             </div>
         </nav>
-        <main style="display:flex; flex-direction: row;">
-                <div>
-                    <div style=" padding-left: 95px;width:500px; justify-content: center;align-items: center;display: flex;">
-                        <p style="padding:20px 20px;font-size: 40px;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
-                            KARAHASAN SA KABABAIHAN
-                        </p>
-                    </div>
-                    
-                    <div style="width: 650px; line-height: 1.5; padding-left:20px;">
-                        <p style="font-size: 20px;text-align: center;">
-                            Isinasaad ng mga pagtatantya na inilathala ng WHO na sa buong mundo humigit-kumulang isa(1) sa tatlong(3) mga kababaihan sa buong mundo ang sumasailalim sa karahasang mapa pisikal o sekswal. Maaaring mapaapekto ang karahasan sa pisikal, mental, at sekswal na kalusugan ng kababaihan.
-                            Ang karahasan laban sa kababaihan ay isang pangunahing problema sa kalusugan ng publiko at isang paglabag sa mga karapatang pantao ng kababaihan.
-                            Sa World Health Assembly noong Mayo 2016, inendorso ng Member States ang isang pandaigdigang plano ng aksyon sa pagpapalakas ng papel ng mga sistema ng kalusugan sa pagtugon sa interpersonal na karahasan, partikular na laban sa kababaihan.
-    
-                        </p>
+        <main style="display: flex;justify-content: space-around;align-items: center;height:100vh;background-position: top;background-image: url(images/dark-gray-painting-texture-background-abstract-rough-distressed-grunge-weathered-paper-canvas-wall-surface-industrial-247517687.jpg);">
+            <h1 style="font-size: 50px;font-family:Prosto One;">Karahasan Sa Babae</h1>
+            <div style="display: flex;justify-content: space-evenly;width: 100%;;">
+                <div class="cont-dtt">
+                    <img class="img-1" src="images/violent-2985520__340.jpg">
+                    <div class="hide-me" style="background-color:rgba(0, 0, 0, 0.87);top: 20px;left: 10px;">
+                        <img class="img2" src="images/violent-2985520__340.jpg">
+                        <div  style="color: white;text-align:center;;line-height: 2;width: 400px;">
+                            <h2 style="padding-top: 20px;">
+                                Ano ang karahasan sa Babae?
+                            </h2>
+                            <p style="padding-top: 20px;font-size: 21px;">
+                                Ang karahasan sa kababaihan ay anumang aktong nakakapinsala sa kanilang kalusugan, kaligtasan, at karapatan bilang tao dahil sa kanilang kasarian. Ito ay maaaring pisikal, emosyonal, o seksuwal na karahasan. Kadalasan, ito ay nagmumula sa mga miyembro ng kanilang pamilya, mga kasintahan, o iba pang tao sa kanilang komunidad.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <img src="images/5455-asia-ending-violence-against-women-feature-01.jpg" style="width:500px;object-fit: contain;padding-left: 40px;">
+                <div class="cont-dtt">
+                    <img class="img-1" src="images/depositphotos_389485580-stock-photo-woman-making-stop-gesture-hand.jpg">
+                    <div class="hide-me" style="background-color:rgba(0, 0, 0, 0.87);top:20px;left: 431px;">
+                        <img class="img2" src="images/depositphotos_389485580-stock-photo-woman-making-stop-gesture-hand.jpg">
+                        <div  style="color: white;text-align:center;;line-height: 2;width: 400px;">
+                            <h2 style="padding-top: 20px;">
+                                Ano ang action ng gobyerno?
+                            </h2>
+                            <p style="padding-top: 20px;font-size: 21px;">
+                                Sa Pilipinas, ang Republic Act No. 9262 o mas kilala bilang "Anti-Violence Against Women and Their Children Act of 2004" ay naglalayong protektahan ang mga kababaihan at kanilang mga anak mula sa lahat ng uri ng karahasan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont-dtt">
+                    <img class="img-1" src="images/desktop-wallpaper-the-alarming-stats-on-domestic-violence-in-canada-against-violence-women.jpg" >
+                    <div class="hide-me" style="background-color:rgba(0, 0, 0, 0.87);top:20px;right: 10px;">
+                        <img class="img2" src="images/desktop-wallpaper-the-alarming-stats-on-domestic-violence-in-canada-against-violence-women.jpg">
+                        <div  style="color: white;text-align:center;;line-height: 2;width: 400px;">
+                            <h2 style="padding-top: 20px; font-size: 15px;">
+                                Sa ilalim ng batas na ito, ang mga sumusunod ay kinikilala bilang mga uri ng karahasan:
+                            </h2>
+                            <p style="padding-top: 20px;font-size: 21px;">
+                                <ul style="text-align: start;">
+                                    <li>
+                                        Pisikal na karahasan - pagpapahirap, pagpapalo, pagpapakulong, at pagpapahirap sa pisikal na anyo.
+                                    </li>
+                                    <li>
+                                        Emosyonal na karahasan - pagmamaltrato, pang-iinsulto, at pagpapakaba sa isang babae.
+                                    </li>
+                                    <li>
+                                        Seksuwal na karahasan - pagsasagawa ng sekswal na aktibidad na labag sa kagustuhan ng isang babae o kanyang anak.
+                                    </li>
+                                    <li>    
+                                        Pananakot at pagbabanta - pagbibigay ng mga panganib sa kaligtasan ng isang babae o kanyang anak.
+                                    </li>
+                                    <li>
+                                        Panloloko - paggamit ng mga kasinungalingan upang maloko ang isang babae o kanyang anak.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
         <script src="system.js"></script>
         <div id="r" class="r" style="background-color: rgb(10, 10, 10);color: rgb(180, 180, 180);line-height: 2; font-style: italic;display: flex;justify-content: space-around;padding-top: 20px;">
