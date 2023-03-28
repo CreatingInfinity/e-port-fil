@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+        <style>
+            body
+            {
+                background-image:url(images/copy-space-wavy-white-background-layers_23-2148845469.webp);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            main{
+                position: relative;
+            }
+            
+            @media(max-width:700px)
+            {
+                .r
+                {
+                    position: static;
+                    bottom: 0;
+                    height: 40px;
+                    padding-bottom: 100%;
+                    width: 100%;
+                    background-color: rgb(10, 10, 10);
+                    color: rgb(180, 180, 180);
+                    line-height: 2;
+                    font-style: italic;
+                    display: flex;
+                    justify-content: space-around;
+                    padding-top: 20px;
+                }                
+            }
+            .bgp img{
+                object-fit:cover;
+                width: 100%;
+                display: block;
+                object-position: top;
+                height: 200px;
+                opacity: .6;
+                transition: all 1s;
+            }
+            .bgp img:hover{
+                height: 600px;
+                opacity: 1;
+            }
+            .murata-jr > div{
+                opacity: 0;
+            }
+            .murata-jr img,div{
+                transition: all .5s;
+            }
+            .murata-jr:hover> img{
+                opacity: .7;
+            }
+            .murata-jr:hover> div{
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <section class="head">
+                    <div onclick="divclick()" class="title-x1">
+                        <div  class="title-x1">
+                        <img src="images/LogoMakr-3qgaIj.png">
+                    </div>
+                </section>
+                <section class="body"></section>
+            </div>
+            <div class="title-x2" style="box-shadow: black 0 0 40px 1px;">
+                <ul>
+                    <li class="about" onclick="divclick()" style="border-left: solid 2px rgb(70, 90, 146);"><p>About Me</p></li>
+                    <li class="edu" onclick="civclick()" style="border-left: solid 2px rgb(67, 65, 163);"><p>Education</p></li>
+                    <li class="Cont" onclick="botclick()" style="border-left: solid 2px rgb(63, 69, 146);border-right: solid 2px rgb(76, 75, 160);"><p>Contact Me</p></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <div class="bgp" style="max-width:100%;padding: 0;margin: 0;background-color: black;">
+                <img src="images/opm.jpg">
+                <img src="images/opm2.jpg" style="object-position: center;">
+                <img src="images/opm3.jpg">
+            </div>
+            <div style="background-color: rgb(7, 7, 7);display: flex;flex-direction: row;padding: 40px 60px;">
+                <div class="yusuke" style="padding: 40px 80px;color: white;">
+                    <div class="murata-jr">
+                        <img src="images/murata.webp" alt="#" style="height: 300px;width: 200px;object-fit: cover;object-position: top;">
+                        <div class="murata-dtt" style="position: absolute;bottom: 320px;left: 195px;">
+                            <p style="text-align: center;font-size: 13px;font-family:Georgia, 'Times New Roman', Times, serif;"> 
+                                Yusuke murata <br>
+                                July 3, 1978 <br>
+                                Mangaka
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bionote" style="padding-top: 40px;color: white;">
+                    <h1 style="color: white;font-family:Prosto-one;font-size: 40px;letter-spacing: 6px;">
+                        Yusuke Murata
+                    </h1>
+                    <p style="line-height: 1.5;font-size: 16px;padding: 40px 0;">
+                        Yusuke Murata is a Japanese manga artist born on July 3, 1978, in Miyagi Prefecture, Japan. He is best known for his work on the manga series "One-Punch Man," which he illustrated based on the story written by ONE.
+                        <br><br>
+                        Murata started his career in manga as an assistant to the manga artist, Obata Takeshi, who is best known for his work on "Death Note." He made his professional debut as a manga artist in 1995 with the one-shot manga "Partner," which was published in Weekly Shonen Jump.
+                        <br><br>
+                        In 2002, Murata gained widespread recognition for his work on the manga series "Eyeshield 21," which he illustrated based on the story written by Riichiro Inagaki. The series ran for 333 chapters and was serialized in Weekly Shonen Jump from 2002 to 2009.
+                        <br><br>
+                        In 2012, Murata began collaborating with ONE on "One-Punch Man," which was originally a webcomic. Murata illustrated the series for publication in the manga magazine Tonari no Young Jump, and it has since become a worldwide phenomenon.
+                        <br><br>
+                        Murata is known for his highly detailed and dynamic artwork, which often features complex layouts and intricate character designs. He has won several awards for his work, including the 122nd Hop Step Award in 1998 and the 61st Shogakukan Manga Award in 2016 for "One-Punch Man."
+                    </p>
+                </div> 
+            </div>
+        </main>
+        
+        <script src="system.js"></script>
+        <div id="r" class="r" style="background-color: rgb(10, 10, 10);color: rgb(180, 180, 180);line-height: 2; font-style: italic;display: flex;justify-content: space-around;padding-top: 20px;">
+            <p>Gmail: axelleltanal@gmail.com</p>
+            <p>Phone Number: +639817097014</p>
+        </div>
+    </body>
+</html>

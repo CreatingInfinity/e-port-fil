@@ -23,3 +23,9 @@ function f3(){
 function f4(){
     window.location.href = 'f4.html';
 }
+function f5(){
+    window.location.href = 'f5.html';
+}
+function f6(){
+    window.location.href = 'f6.html';
+}
