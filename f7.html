@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>E-portfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700;800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+        <style>
+            body
+            {
+                background-image:url(images/copy-space-wavy-white-background-layers_23-2148845469.webp);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            main{
+                position: relative;
+            }
+            
+            @media(max-width:700px)
+            {
+                .r
+                {
+                    position: static;
+                    bottom: 0;
+                    height: 40px;
+                    padding-bottom: 100%;
+                    width: 100%;
+                    background-color: rgb(10, 10, 10);
+                    color: rgb(180, 180, 180);
+                    line-height: 2;
+                    font-style: italic;
+                    display: flex;
+                    justify-content: space-around;
+                    padding-top: 20px;
+                }                
+            }   
+            .stt img,.i2{
+                width: 100px;
+                object-fit: cover;
+                transition: 1s;
+                z-index: 5;
+            }
+            .stt img:hover{
+                width: 90%;
+                filter: brightness(2);
+            }
+            .i2:hover{
+                width: 80%;
+                filter: brightness(2);
+
+            }
+            .rtt p{
+                font-family:Indie Flower;
+            }
+            .bgp img{
+                object-fit:cover;
+                width: 100%;
+                display: block;
+                object-position: top;
+                height: 200px;
+                opacity: .6;
+                transition: all 1s;
+            }
+            .bgp img:hover{
+                height: 600px;
+                opacity: 1;
+            }   
+        </style>
+    </head>
+    <body>
+        <script src="system.js"></script>
+        <nav>
+            <div>
+                <section class="head">
+                    <div onclick="divclick()" class="title-x1">
+                        <img src="images/LogoMakr-3qgaIj.png">
+                    </div>
+                </section>
+                <section class="body"></section>
+            </div>
+            <div class="title-x2">
+                <ul>
+                    <li class="about" onclick="divclick()" style="border-left: solid 2px rgb(70, 90, 146);"><p>About Me</p></li>
+                    <li class="edu" onclick="civclick()" style="border-left: solid 2px rgb(67, 65, 163);"><p>Education</p></li>
+                    <li class="Cont" onclick="botclick()" style="border-left: solid 2px rgb(63, 69, 146);border-right: solid 2px rgb(76, 75, 160);"><p>Contact Me</p></li>
+                </ul>
+            </div>
+        </nav>
+        <main>
+            <section style="background-color: rgb(44, 112, 103);height: 800px;background-image: url(images/vector-palm-trees-against-sunset-sky.jpg);background-position: center;">
+                <div style="display: flex;justify-content: center;align-items: center;flex-direction: column;">
+                    <h1 style="font-family:Indie Flower;font-size: 40px;color: white;padding-top: 142px;">
+                        Sunsets
+                    </h1>
+                    <div class="stt" style="padding-top:50px ;height:300px;width: 600px;display: flex;justify-content: center;overflow: hidden;position: relative;">
+                        <img style="border-top-left-radius: 10px;" src="images/sunset (4).jpg">
+                        <img src="images/sunset (1).jpg">
+                        <img class="i2" src="images/sunset (3).jpg">
+                        <img class="i2" style="border-bottom-right-radius: 10px;" src="images/sunset (2).jpg">
+                        <div class="gold" style="background-color: gold;position: absolute;bottom: 0;height: 300px;width: 385px;z-index: 2;box-shadow: 0 200px 100px 0 gold;"></div>
+                    </div>
+                </div>
+                <div style="padding-top:10px;display: flex;flex-direction: row;justify-content: space-between;">
+                    <div class="rtt" style="color: white;font-size: 20px;padding-top: 30px;padding-left: 15px;text-align: left;">
+                        <p>
+                            Beauty is found in nature, it is everywhere even in departure. <br>
+                            Feel empty only when empty but not till the end of emptiness. <br>
+                            As the abyss goes nigh, it feel yet damper. <br>
+                            For when the horizon glows bright to leave a crimson delight, <br>
+                            The heavens flame shall engulf the unwary twilight.
+                        </p>
+                    </div>
+                    <div class="rtt" style="color: white;font-size: 20px;padding-top: 30px;padding-right: 15px;text-align: right;">
+                        <p>
+                             A canvas to show perfection, is yet only fitting. <br>
+                             In adieu à un beau soleil, a farewell for one as bright as thine. <br>
+                             Welcome O' night, a wondrous wonder full of mystery, <br>
+                             yet enveloped in a spine of agony. <br>
+                             Longing for a sight to be hold of red and gold.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        
+        <script src="system.js"></script>
+        <div id="r" class="r" style="background-color: rgb(10, 10, 10);color: rgb(180, 180, 180);line-height: 2; font-style: italic;display: flex;justify-content: space-around;padding-top: 20px;">
+            <p>Gmail: axelleltanal@gmail.com</p>
+            <p>Phone Number: +639817097014</p>
+        </div>
+    </body>
+</html>
